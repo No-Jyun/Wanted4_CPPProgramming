@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CompilerTest", "CompilerTes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InlineFunction", "InlineFunction\InlineFunction.vcxproj", "{000E2989-9FF4-4677-AB3E-EE6E4358F91F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer", "Pointer\Pointer.vcxproj", "{49C8A6D9-7040-494A-99D5-B9722F1BC925}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{000E2989-9FF4-4677-AB3E-EE6E4358F91F}.Release|x64.Build.0 = Release|x64
 		{000E2989-9FF4-4677-AB3E-EE6E4358F91F}.Release|x86.ActiveCfg = Release|Win32
 		{000E2989-9FF4-4677-AB3E-EE6E4358F91F}.Release|x86.Build.0 = Release|Win32
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Debug|x64.ActiveCfg = Debug|x64
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Debug|x64.Build.0 = Debug|x64
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Debug|x86.ActiveCfg = Debug|Win32
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Debug|x86.Build.0 = Debug|Win32
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Release|x64.ActiveCfg = Release|x64
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Release|x64.Build.0 = Release|x64
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Release|x86.ActiveCfg = Release|Win32
+		{49C8A6D9-7040-494A-99D5-B9722F1BC925}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
