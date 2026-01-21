@@ -1,5 +1,17 @@
 #include <iostream>
 
+#define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
+
+#ifdef _DEBUG
+#define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
+// Replace _NORMAL_BLOCK with _CLIENT_BLOCK if you want the
+// allocations to be of _CLIENT_BLOCK type
+#else
+#define DBG_NEW new
+#endif
+
 // void DeletePointer(void* ptr) : 안되는 이유 pointer를 해제하는게 아니라 pointer가 가리키는 곳을 가리킴
 void DeletePointer(void*& ptr)
 {
@@ -12,8 +24,16 @@ void DeletePointer(void*& ptr)
 
 int main()
 {
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
+	//_CrtSetBreakAlloc(157);
+
+	// todo: 메모리 릭 일부로
+	int* intPointer = DBG_NEW int;
+	delete intPointer;
+
 	// 동적 할당
-	char* buffer = new char[10];
+	//char* buffer = new char[10];
 
 	// 포인터는 저장하는 변수
 	//void* pointer = nullptr;
