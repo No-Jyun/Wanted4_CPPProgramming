@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e9709b15-4329-4c46-a1cf-1357f28ed305}</ProjectGuid>
-    <RootNamespace>Class</RootNamespace>
+    <ProjectGuid>{b72e8d96-baef-4cfe-a083-5d9abd70026c}</ProjectGuid>
+    <RootNamespace>ForwardDeclaration2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,11 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="..\ForwardDeclaration\Entity\Entity.cpp" />
+    <ClCompile Include="..\ForwardDeclaration\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Player.h" />
+    <ClInclude Include="..\ForwardDeclaration\Entity\Entity.h" />
+    <ClInclude Include="..\ForwardDeclaration\Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
